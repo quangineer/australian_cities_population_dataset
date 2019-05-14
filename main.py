@@ -14,9 +14,17 @@ for i in data_2017:
     a = int(i.replace(",",""))
     Population_2017.append(a)
 
-#New dataframe, containing only population of cities with more than 0 person living in:
-dataPopulations = data["Population_2017">0]
-print (dataPopulations)
+#Sort cities' populations from largest to smallest:
+Population_2017.sort(reverse = True)
+print (Population_2017)
+#OR
+# A = sorted(Population_2017)
+# print A
 
-# #Utilize matplotlib to scale our population between the min and the max, then assign this scale to our values.
-# norm = matplotlib.colors.Normalize(vmin=min())
+#Sort cities's populations from smallest to largest:
+# Population_2017.sort()
+# print (Population_2017)
+#The difference between sort and sorted is that sort is a list method that modifies the list in place
+#whereas sorted is a built-in function that creates a new list without touching the original one.
+
+New_list_of_Population_2017
